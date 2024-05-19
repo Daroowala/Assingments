@@ -106,9 +106,31 @@
 // }
 
 // 10th Ans
-var emailElement = document.getElementById('email');
-var parentNode = emailElement.parentNode;
-var nodeType = emailElement.nodeType;{
-    console.log(parentNode);
-    console.log(nodeType);
+// var emailElement = document.getElementById('email');
+// var parentNode = emailElement.parentNode;
+// var nodeType = emailElement.nodeType;{
+//     console.log(parentNode);
+//     console.log(nodeType);
+// }
+
+
+// Objects Assingment
+// Qus: 1
+var itemsArray = [
+    {name: "juice", price: "50", quantity: "3"},
+    {name: "cookie", price: "30", quantity: "9"},
+    {name: "shirt", price: "880", quantity: "1"},
+    {name: "pen", price: "100", quantity: "2"}
+];
+
+function calculateTotalPrice(){
+    var totalPriceAllItems = 0;
+    itemsArray.forEach(function(item) {
+        var totalPriceItem = item.price * item.quantity;
+        document.write("Total price of " + item.name + ": " + totalPriceItem + "<br/>");
+        totalPriceAllItems += totalPriceItem;
+    });
+
+    document.write("Total price of all items: " + totalPriceAllItems);
 }
+calculateTotalPrice();
