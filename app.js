@@ -115,22 +115,42 @@
 
 
 // Objects Assingment
-// Qus: 1
-var itemsArray = [
-    {name: "juice", price: "50", quantity: "3"},
-    {name: "cookie", price: "30", quantity: "9"},
-    {name: "shirt", price: "880", quantity: "1"},
-    {name: "pen", price: "100", quantity: "2"}
-];
+// Ans: 1
+// var itemsArray = [
+//     {name: "juice", price: "50", quantity: "3"},
+//     {name: "cookie", price: "30", quantity: "9"},
+//     {name: "shirt", price: "880", quantity: "1"},
+//     {name: "pen", price: "100", quantity: "2"}
+// ];
 
-function calculateTotalPrice(){
-    var totalPriceAllItems = 0;
-    itemsArray.forEach(function(item) {
-        var totalPriceItem = item.price * item.quantity;
-        document.write("Total price of " + item.name + ": " + totalPriceItem + "<br/>");
-        totalPriceAllItems += totalPriceItem;
-    });
+// function calculateTotalPrice(){
+//     var totalPriceAllItems = 0;
+//     itemsArray.forEach(function(item) {
+//         var totalPriceItem = item.price * item.quantity;
+//         document.write("Total price of " + item.name + ": " + totalPriceItem + "<br/>");
+//         totalPriceAllItems += totalPriceItem;
+//     });
 
-    document.write("Total price of all items: " + totalPriceAllItems);
-}
-calculateTotalPrice();
+//     document.write("Total price of all items: " + totalPriceAllItems);
+// }
+// calculateTotalPrice();
+
+// Ans: 2
+var users = 
+    {name: "Rehan",
+    email: "Buleshaperd3@gmail.com",
+    password: "Password1234",
+    age: 42,
+    gender: "Male",
+    city: "Karachi",
+    country: "Pakistan" 
+    };
+    function checkProperties(){
+        if("age" in users && "country" in users){
+            console.log("Age and country properties exist in the object.")
+        }
+        else{
+            console.log("Age and country properties do not exist in the object.")
+        }
+    }
+    checkProperties();
