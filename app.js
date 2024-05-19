@@ -136,21 +136,50 @@
 // calculateTotalPrice();
 
 // Ans: 2
-var users = 
-    {name: "Rehan",
-    email: "Buleshaperd3@gmail.com",
-    password: "Password1234",
-    age: 42,
-    gender: "Male",
-    city: "Karachi",
-    country: "Pakistan" 
-    };
-    function checkProperties(){
-        if("age" in users && "country" in users){
-            console.log("Age and country properties exist in the object.")
-        }
-        else{
-            console.log("Age and country properties do not exist in the object.")
-        }
-    }
-    checkProperties();
+// var users = 
+//     {name: "Rehan",
+//     email: "Buleshaperd3@gmail.com",
+//     password: "Password1234",
+//     age: 42,
+//     gender: "Male",
+//     city: "Karachi",
+//     country: "Pakistan" 
+//     };
+//     function checkProperties(){
+//         if("age" in users && "country" in users){
+//             console.log("Age and country properties exist in the object.")
+//         }
+//         else{
+//             console.log("Age and country properties do not exist in the object.")
+//         }
+        
+//     }
+    
+//     checkProperties();
+    
+//     function checkSecondProperties(){
+//         if("firstName" in users && "lastName" in users){
+//             console.log("firstName and lastName properties exist in the object.")
+//         }
+//         else{
+//             console.log("firstName and lastName properties do not exist in the object.")
+//         }
+//     }
+//     checkSecondProperties();
+
+// Ans:3
+function Record(name, email, age, country) {
+    this.name = name;
+    this.email = email;
+    this.age = age;
+    this.country = country;
+}
+var record1 = new Record("John Doe", "john@example.com", 25, "USA");
+var record2 = new Record("Jane Smith", "jane@example.com", 30, "Canada");
+var record3 = new Record("Alice Johnson", "alice@example.com", 22, "UK");
+var record4 = new Record("Rehan Rafique", "blue@gmail.com", 42, "Pakistan")
+
+console.log("Record 1:", record1);
+console.log("Record 2:", record2);
+console.log("Record 3:", record3);
+console.log("Record 4:", record4);
