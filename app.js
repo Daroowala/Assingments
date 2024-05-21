@@ -168,18 +168,21 @@
 //     checkSecondProperties();
 
 // Ans:3
-function Record(name, email, age, country) {
-    this.name = name;
-    this.email = email;
-    this.age = age;
-    this.country = country;
-}
-var record1 = new Record("John Doe", "john@example.com", 25, "USA");
-var record2 = new Record("Jane Smith", "jane@example.com", 30, "Canada");
-var record3 = new Record("Alice Johnson", "alice@example.com", 22, "UK");
-var record4 = new Record("Rehan Rafique", "blue@gmail.com", 42, "Pakistan")
+// function Record(name, email, age, country) {
+//     this.name = name;
+//     this.email = email;
+//     this.age = age;
+//     this.country = country;
+// }
+// var record1 = new Record("John Doe", "john@example.com", 25, "USA");
+// var record2 = new Record("Jane Smith", "jane@example.com", 30, "Canada");
+// var record3 = new Record("Alice Johnson", "alice@example.com", 22, "UK");
+// var record4 = new Record("Rehan Rafique", "blue@gmail.com", 42, "Pakistan")
 
-console.log("Record 1:", record1);
-console.log("Record 2:", record2);
-console.log("Record 3:", record3);
-console.log("Record 4:", record4);
+// console.log("Record 1:", record1);
+// console.log("Record 2:", record2);
+// console.log("Record 3:", record3);
+// console.log("Record 4:", record4);
+
+// Ans:4
+
